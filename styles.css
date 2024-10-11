@@ -1,0 +1,59 @@
+/* Hero Section */
+.hero {
+    width: 100%;                /* Buat Section full selebar layar */
+    height: 1080px;             /* Mengunci tinggi pada 1080px */
+    background-size: cover;     /* Buat gambar nutup semua area */
+    background-position: center; /* Gambar stay di tengah */
+}
+
+.carousel-item {
+    height: 1080px;            /* Menjaga height carousel 1080p */
+}
+
+.hero .text-center {
+    background-color: rgba(0, 0, 0, 0.5); /* Nambah background semi-transparan di teks */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;               /* Teks putih */
+}
+
+footer {
+    background-color: #343a40;  /* Footer gelap */
+    color: white;               /* Teks putih */
+    padding: 20px 0;            /* Padding atas dan bawah footer */
+}
+
+footer a {
+    color: white;               /* Warna default ikon sosmed */
+    margin-right: 15px;         /* Jarak antar ikon */
+    text-decoration: none;      /* Hilangkan garis bawah link */
+    transition: color 0.3s;     /* Efek transisi hover */
+}
+
+footer a:hover {
+    color: #f39c12;             /* Warna ikon berubah saat hover */
+}
+
+/* Tambahkan margin dan padding pada section lain */
+#layanan, #about-us {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 40px;        /* Jarak antara judul dan konten */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero {
+        height: 600px;          /* Set tinggi hero section untuk layar lebih kecil */
+    }
+
+    .carousel-item {
+        height: 600px;          /* Sesuaikan ketinggian carousel pada layar kecil */
+    }
+
+    .hero .text-center {
+        padding: 15px;          /* Kurangi padding teks untuk layar lebih kecil */
+    }
+}
